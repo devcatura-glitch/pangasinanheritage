@@ -25,12 +25,8 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}>
       <head>
-        {/* eslint-disable-next-line @next/next/no-css-tags */}
-        <link 
-          rel="stylesheet" 
-          href="/pangasinanheritage/_next/static/css/app/layout.css" 
-          crossOrigin="anonymous" 
-        />
+        {/* eslint-disable-next-line @next/next/no-sync-scripts */}
+        <script src="https://cdn.tailwindcss.com"></script>
       </head>
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
