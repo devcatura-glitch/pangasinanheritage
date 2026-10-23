@@ -27,21 +27,8 @@ export default function RootLayout({
       <head>
         {/* eslint-disable-next-line @next/next/no-sync-scripts */}
         <script src="https://cdn.tailwindcss.com"></script>
-        {/* This prevents the image glitch by hiding the body until Tailwind loads */}
-        <style>{`
-          body { opacity: 0; transition: opacity 0.2s ease-in; }
-          .tailwind-loaded body { opacity: 1; }
-        `}</style>
       </head>
-      <body className="min-h-full flex flex-col">
-        {/* Tiny script to remove the hidden class once everything is ready */}
-        <script dangerouslySetInnerHTML={{__html: `
-          window.addEventListener('load', function() {
-            document.documentElement.classList.add('tailwind-loaded');
-          });
-        `}} />
-        {children}
-      </body>
+      <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );
 }
