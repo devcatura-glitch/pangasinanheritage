@@ -10,8 +10,13 @@ interface HeritageCardProps {
 export default function HeritageCard({ imageSrc, title, location, description }: HeritageCardProps) {
   return (
     <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
-      <div className="relative h-48 w-full">
-        <Image src={imageSrc} alt={title} fill className="object-cover" />
+      <div className="relative h-48 w-full aspect-video">
+        <Image 
+  src={`/pangasinanheritage${imageSrc}`} 
+  alt={title} 
+  fill 
+  className="object-cover" 
+/>
       </div>
       <div className="p-6">
         <h2 className="text-2xl font-bold text-gray-800 mb-2">{title}</h2>
