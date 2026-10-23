@@ -2,6 +2,7 @@
 const nextConfig = {
   output: 'export',
   basePath: '/pangasinanheritage',
+  assetPrefix: '/pangasinanheritage/', // <-- ADD THIS LINE
   images: {
     unoptimized: true,
   },
