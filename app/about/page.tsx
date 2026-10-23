@@ -16,13 +16,13 @@ export default function About() {
         {/* Images Section */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12">
           <div className="relative h-64 w-full rounded-lg overflow-hidden shadow-md">
-            <Image src="/manaoagchurch.jpg" alt="Manaoag Church" fill className="object-cover" />
+            <Image src="/pangasinanheritage/manaoagchurch.jpg" alt="Manaoag Church" fill className="object-cover" />
           </div>
           <div className="relative h-64 w-full rounded-lg overflow-hidden shadow-md">
-            <Image src="/umbrellarocks.jpg" alt="Umbrella Rocks" fill className="object-cover" />
+            <Image src="/pangasinanheritage/umbrellarocks.jpg" alt="Umbrella Rocks" fill className="object-cover" />
           </div>
           <div className="relative h-64 w-full rounded-lg overflow-hidden shadow-md">
-            <Image src="/tondolbeach.jpg" alt="Tondol Beach" fill className="object-cover" />
+            <Image src="/pangasinanheritage/tondolbeach.jpg" alt="Tondol Beach" fill className="object-cover" />
           </div>
         </div>
 
