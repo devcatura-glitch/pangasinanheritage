@@ -1,7 +1,6 @@
 import Header from "../components/organisms/header";
 import Footer from "../components/organisms/footer";
 import InfoSection from "../components/molecules/infosection";
-import Image from "next/image";
 
 export default function About() {
   return (
@@ -15,14 +14,29 @@ export default function About() {
 
         {/* Images Section */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12">
-          <div className="relative h-64 w-full rounded-lg overflow-hidden shadow-md">
-            <Image src="/pangasinanheritage/manaoagchurch.jpg" alt="Manaoag Church" fill className="object-cover" />
+          <div className="relative h-64 w-full rounded-lg overflow-hidden shadow-md bg-gray-200">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img 
+              src="/pangasinanheritage/manaoagchurch.jpg" 
+              alt="Manaoag Church" 
+              className="w-full h-full object-cover" 
+            />
           </div>
-          <div className="relative h-64 w-full rounded-lg overflow-hidden shadow-md">
-            <Image src="/pangasinanheritage/umbrellarocks.jpg" alt="Umbrella Rocks" fill className="object-cover" />
+          <div className="relative h-64 w-full rounded-lg overflow-hidden shadow-md bg-gray-200">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img 
+              src="/pangasinanheritage/umbrellarocks.jpg" 
+              alt="Umbrella Rocks" 
+              className="w-full h-full object-cover" 
+            />
           </div>
-          <div className="relative h-64 w-full rounded-lg overflow-hidden shadow-md">
-            <Image src="/pangasinanheritage/tondolbeach.jpg" alt="Tondol Beach" fill className="object-cover" />
+          <div className="relative h-64 w-full rounded-lg overflow-hidden shadow-md bg-gray-200">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img 
+              src="/pangasinanheritage/tondolbeach.jpg" 
+              alt="Tondol Beach" 
+              className="w-full h-full object-cover" 
+            />
           </div>
         </div>
 
