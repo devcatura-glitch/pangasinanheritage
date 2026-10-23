@@ -15,6 +15,7 @@ export default function HeritageCard({ imageSrc, title, location, description }:
   src={`/pangasinanheritage${imageSrc}`} 
   alt={title} 
   fill 
+  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
   className="object-cover" 
 />
       </div>
